@@ -6,13 +6,5 @@
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="282dp"
-        android:layout_height="359dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="228dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dj_logo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
