@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">musicMenu</string>
+    <string name="app_name">Portable DJ</string>
+
+    <string-array name="options">
+        <item>Country</item>
+        <item>Rap</item>
+        <item>Pop</item>
+    </string-array>
 </resources>
