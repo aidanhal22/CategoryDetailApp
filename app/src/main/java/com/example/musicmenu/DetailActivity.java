@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity {
@@ -26,13 +27,13 @@ public class DetailActivity extends AppCompatActivity {
             // Finish this code to match your xml file.  These names are what I used.
             TextView title = findViewById(R.id.title);
             TextView artist = findViewById(R.id.artist);
-            TextView desc = findViewById(R.id.descTextView);
-            ImageView photo = findViewById(R.id.photoImageView);
+            TextView length = findViewById(R.id.length);
+            ImageView photo = findViewById(R.id.imageView3);
 
             // set values on the screen based on the object that was passed to this Detail activity
             title.setText(myMusic.getName());
-            artist.setText("$"+myMusic.getPrice());
-            desc.setText(myFood.getDesc());
+            artist.setText(myMusic.getArtist());
+            length.setText((int) myMusic.getLength());
 
             if (myMusic.getImageResourceID() == 0) {
                 // set a default pic or decide what to do in this case.

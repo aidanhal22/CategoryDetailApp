@@ -5,5 +5,7 @@
     <dimen name="fontText">20sp</dimen>
     <dimen name="rightMargin">50dp</dimen>
     <dimen name="leftMargin">105dp</dimen>
+    <dimen name="artistLeftMargin">-60dp</dimen>
+    <dimen name="newLeftMargin">-30dp</dimen>
     <dimen name="topMargin">200dp</dimen>
 </resources>

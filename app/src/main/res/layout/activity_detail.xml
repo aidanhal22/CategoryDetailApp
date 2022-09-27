@@ -12,7 +12,7 @@
         android:id="@+id/imageView3"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:srcCompat="@drawable/waitforyou"
+        app:srcCompat="@drawable/vegas"
         android:layout_margin="@dimen/leftMargin"
         android:layout_gravity="center_vertical"
         />
@@ -24,15 +24,33 @@
         android:text="TextView"
         android:layout_gravity="center"
         android:layout_marginTop="-100dp"
+        android:layout_marginLeft="@dimen/newLeftMargin"
         android:textSize="@dimen/fontTitle"
         />
+
     <TextView
         android:id="@+id/artist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
         android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/artistLeftMargin"
         android:layout_marginTop="00dp"
         android:textSize="@dimen/fontText"
         />
+
+    <TextView
+        android:id="@+id/length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="280dp"
+        android:text="TextView" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"/>
 </androidx.appcompat.widget.LinearLayoutCompat>

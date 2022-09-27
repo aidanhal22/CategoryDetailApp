@@ -17,6 +17,7 @@ public class Music implements Parcelable {
         this.name = name;
         this.artist = artist;
         this.length = length;
+        this.imageResourceID = imageResourceID;
     }
 
     // this code is needed for the Food class to work with Parcelable

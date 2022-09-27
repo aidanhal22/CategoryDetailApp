@@ -14,11 +14,10 @@ import java.util.ArrayList;
 public class CategoryActivity extends AppCompatActivity {
 
     public static final String DETAIL_CHOICE = "chosen Detailed object-Food in this case";
-
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
-
 
         Intent intent = getIntent();
         // Gets the particular ArrayList that was passed in of the specific type.
@@ -36,6 +35,7 @@ public class CategoryActivity extends AppCompatActivity {
 
         // Create listener to listen for when a Food from the specific Category list is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 // Creates an intent to go from the Specific Category to the specific Detail
                 Intent intent = new Intent(CategoryActivity.this, DetailActivity.class);
@@ -47,4 +47,5 @@ public class CategoryActivity extends AppCompatActivity {
             }
         });
     }
+
 }
