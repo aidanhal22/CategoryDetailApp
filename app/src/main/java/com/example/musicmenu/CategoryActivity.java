@@ -30,20 +30,25 @@ public class CategoryActivity extends AppCompatActivity {
         ArrayAdapter<Music> listAdapter = new ArrayAdapter<>(
                 this, android.R.layout.simple_list_item_1, dataToDisplay);
         // This finds the listView and then adds the adapter to bind the data to this view
+
+        MusicAdapter musicAdapter = new MusicAdapter(this, dataToDisplay);
         ListView listView = (ListView) findViewById(R.id.categoryOptions);
-        listView.setAdapter(listAdapter);
+        listView.setAdapter(musicAdapter);
 
-        // Create listener to listen for when a Food from the specific Category list is clicked on
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                // Creates an intent to go from the Specific Category to the specific Detail
-                Intent intent = new Intent(CategoryActivity.this, DetailActivity.class);
-                // Sends the specific object at index i to the Detail activity
-                // In this case, it is sending the particular Food object
-                intent.putExtra(DETAIL_CHOICE, dataToDisplay.get(position));
-
-                startActivity(intent);
+//        ListView listView = (ListView) findViewById(R.id.categoryOptions);
+//        listView.setAdapter(listAdapter);
+//
+//        // Create listener to listen for when a Food from the specific Category list is clicked on
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+//                // Creates an intent to go from the Specific Category to the specific Detail
+//                Intent intent = new Intent(CategoryActivity.this, DetailActivity.class);
+//                // Sends the specific object at index i to the Detail activity
+//                // In this case, it is sending the particular Food object
+//                intent.putExtra(DETAIL_CHOICE, dataToDisplay.get(position));
+//
+//                startActivity(intent);
             }
         });
     }
