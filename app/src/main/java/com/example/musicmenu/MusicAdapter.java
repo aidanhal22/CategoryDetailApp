@@ -21,13 +21,13 @@ public class MusicAdapter extends ArrayAdapter<Music> {
                     .inflate(R.layout.music_row_layout, parent, false);
 
         }
-        TextView tvSongName = (TextView) convertView.findViewByID(R.id.songName);
-        TextView tvArtistName = (TextView) convertView.findViewByID(R.id.artistName);
-        TextView tvSongLength = (TextView) convertView.findViewByID(R.id.songLength);
+        TextView tvSongName = (TextView) convertView.findViewById(R.id.songName);
+        TextView tvArtistName = (TextView) convertView.findViewById(R.id.artistName);
+        TextView tvSongLength = (TextView) convertView.findViewById(R.id.songlength);
 
         tvSongName.setText(myMusic.getName());
         tvArtistName.setText(myMusic.getArtist());
-        tvSongLength.setText((int) myMusic.getLength());
+        tvSongLength.setText(myMusic.getLength() + " " );
 
         return convertView;
     }
